@@ -1,0 +1,3 @@
+# Keep Graphify's default project graph code-only unless an LLM key is provided.
+*.md
+docs/

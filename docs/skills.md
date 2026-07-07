@@ -1,0 +1,1 @@
+superpower (brainstorming) : "https://github.com/obra/superpowers/tree/main/skills/brainstorming"
