@@ -1822,7 +1822,7 @@ Commands to install resources using the namespace syntax from configured registr
 
 ```bash
 # Install from a configured registry
-npx shadcn@latest add @v0/dashboard
+npx shadcn@latest add @v0/home
 
 # Install from private registry
 npx shadcn@latest add @private/button

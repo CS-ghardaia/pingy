@@ -7,14 +7,12 @@ import Image from "next/image";
 import {
   BookOpen,
   Search,
-  Users,
   Shield,
   Star,
   ArrowLeft,
   ChevronDown,
   Menu,
   X,
-  FileText,
   Code2,
   Trophy,
   CheckCircle2
@@ -61,7 +59,7 @@ function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-12">
         {/* Logo */}
         <Link href="/">
-          <Image src={"/logo-h.svg"} width={122} height={92} alt="logo" />
+          <Image src={"/logo-h.svg"} width={122} height={92} alt="شعار Pingy" />
         </Link>
 
         {/* Desktop Nav */}
@@ -80,13 +78,13 @@ function Navbar() {
         {/* CTA */}
         <div className="hidden items-center gap-3 md:flex">
           <a
-            href="#"
+            href="/auth/login"
             className="rounded-lg px-4 py-2 text-sm font-bold text-muted-foreground transition-colors hover:text-foreground"
           >
             تسجيل الدخول
           </a>
           <a
-            href="#"
+            href="/auth/register"
             className="rounded-lg bg-primary px-5 py-2.5 text-sm font-bold text-primary-foreground transition-all hover:bg-primary/90 hover:scale-[1.02] active:scale-[0.98]"
           >
             انضم الآن
@@ -126,13 +124,13 @@ function Navbar() {
             ))}
             <div className="mt-2 flex flex-col gap-2 border-t border-border pt-4">
               <a
-                href="#"
+                href="/auth/login"
                 className="text-center text-sm font-bold text-muted-foreground"
               >
                 تسجيل الدخول
               </a>
               <a
-                href="#"
+                href="/auth/register"
                 className="rounded-lg bg-primary px-5 py-2.5 text-center text-sm font-bold text-primary-foreground"
               >
                 انضم الآن
@@ -185,7 +183,7 @@ function Hero() {
               className="flex flex-col items-center gap-3 sm:flex-row lg:justify-start"
             >
               <a
-                href="#"
+                href="/auth/register"
                 className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-base font-bold text-primary-foreground transition-all hover:bg-primary/90 hover:scale-[1.02] active:scale-[0.98]"
               >
                 ابدأ رحلتك
@@ -232,7 +230,7 @@ function Hero() {
               src={"/images/hero.png"}
               height={400}
               width={450}
-              alt="student hide the book"
+              alt="طالب يقرأ كتابا"
             />
           </motion.div>
         </div>
@@ -278,7 +276,7 @@ function HowItWorks() {
             viewport={{ once: true }}
             className="order-2 lg:order-1"
           >
-            <Image src={"/images/group-students-2.png"} width={650} height={450} alt="team" />
+            <Image src={"/images/group-students-2.png"} width={650} height={450} alt="مجموعة طلاب" />
           </motion.div>
 
           {/* Steps */}
@@ -461,7 +459,7 @@ function ContentPreview() {
             viewport={{ once: true }}
             className="relative"
           >
-            <Image src={"/images/Asset.png"} width={450} height={450} alt="algeria" />
+            <Image src={"/images/Asset.png"} width={450} height={450} alt="خريطة الجزائر" />
           </motion.div>
         </div>
       </div>
@@ -666,7 +664,7 @@ function CTA() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
-              href="#"
+              href="/auth/register"
               className="inline-flex items-center gap-2 rounded-lg bg-secondary px-8 py-3 text-base font-bold text-secondary-foreground transition-all hover:bg-secondary/80 hover:scale-[1.02] active:scale-[0.98]"
             >
               أنشئ حسابك الآن
@@ -706,7 +704,7 @@ function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Image src={"/logo-h.svg"} width={120} height={82} alt="logo" className="mb-3" />
+            <Image src={"/logo-h.svg"} width={120} height={82} alt="شعار Pingy" className="mb-3" />
             <p className="text-sm leading-relaxed text-muted-foreground">
               منصة طلابية  لطلاب علوم الحاسوب في الجامعات الجزائرية.
             </p>

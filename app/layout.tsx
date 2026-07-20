@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
-import { Cairo, Geist_Mono } from "next/font/google";
+import { JetBrains_Mono, Manrope } from "next/font/google";
 import "./globals.css";
 
-const cairo = Cairo({
-  variable: "--font-cairo",
-  subsets: ["arabic", "latin"],
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
   display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetBrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Pingy | منصة طلاب علوم الحاسوب",
   description:
-    "منصة عربية تساعد طلاب علوم الحاسوب على التعلم، مشاركة الموارد، حل التمارين، وبناء مجتمع دراسي نشط.",
+    "منصة عربية تساعد طلاب علوم الحاسوب على التعلم ومشاركة الموارد وحل التمارين وبناء مجتمع دراسي نشط.",
 };
 
 export default function RootLayout({
@@ -28,7 +29,7 @@ export default function RootLayout({
     <html
       lang="ar"
       dir="rtl"
-      className={`${cairo.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${manrope.variable} ${jetBrainsMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
